@@ -119,7 +119,9 @@ menuitem:is(:hover, [_moz-menuactive="true"])[checked]>.menu-icon {
 /* Popup Notifications */
 moz-message-bar,
 notification-message,
-notification {
+notification,
+#fullscreen-warning,
+#pointerlock-warning {
     --message-bar-background-color: var(--toolbar-field-background-color,
             #2b2a33) !important;
     --message-bar-text-color: var(--lwt-text-color, #fbfbfe) !important;
@@ -154,5 +156,26 @@ notification-message moz-button.close:hover {
     background-color: var(--toolbarbutton-background-color-hover,
             rgba(255, 255, 255, 0.1)) !important;
     fill: var(--toolbarbutton-icon-fill, #00ddff) !important;
+    color: var(--toolbarbutton-icon-fill, #00ddff) !important;
+}
+
+/* Exit Full Screen Button */
+#fullscreen-exit-button,
+#pointerlock-exit-button {
+    appearance: none !important;
+    -moz-default-appearance: none !important;
+    background-color: transparent !important;
+    color: var(--lwt-text-color, #fbfbfe) !important;
+    border: 1px solid var(--toolbar-field-background-color-focus, #42414d) !important;
+    border-radius: 6px !important;
+    padding: 6px 12px !important;
+    margin-left: 12px !important;
+    transition: all 120ms ease;
+}
+
+#fullscreen-exit-button:hover,
+#pointerlock-exit-button:hover {
+    background-color: var(--toolbarbutton-background-color-hover, rgba(255, 255, 255, 0.1)) !important;
+    border-color: var(--toolbarbutton-icon-fill, #00ddff) !important;
     color: var(--toolbarbutton-icon-fill, #00ddff) !important;
 }
