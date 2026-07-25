@@ -166,7 +166,7 @@ notification-message moz-button.close:hover {
     -moz-default-appearance: none !important;
     background-color: transparent !important;
     color: var(--lwt-text-color, #fbfbfe) !important;
-    border: 1px solid var(--toolbar-field-background-color-focus, #42414d) !important;
+    border: 1px solid var(--chrome-content-separator-color, #42414d) !important;
     border-radius: 6px !important;
     padding: 6px 12px !important;
     margin-left: 12px !important;
@@ -178,4 +178,38 @@ notification-message moz-button.close:hover {
     background-color: var(--toolbarbutton-background-color-hover, rgba(255, 255, 255, 0.1)) !important;
     border-color: var(--toolbarbutton-icon-fill, #00ddff) !important;
     color: var(--toolbarbutton-icon-fill, #00ddff) !important;
+}
+
+/* Ctrl+Tab Active Border */
+.ctrlTab-preview:focus>.ctrlTab-preview-inner,
+.ctrlTab-preview[selected="true"]>.ctrlTab-preview-inner {
+    border-color: var(--toolbarbutton-icon-fill, #00ddff) !important;
+    box-shadow: 0 0 0 1px var(--toolbarbutton-icon-fill, #00ddff) !important;
+}
+
+/* Autoscroller Theme */
+.autoscroller {
+    /* Theme the inner background circle and border using native variables so it stays the correct size */
+    --panel-background-color: var(--lwt-accent-color, #1c1b22) !important;
+    --panel-border-color: var(--chrome-content-separator-color, #42414d) !important;
+    
+    /* Clean up manual overrides that were making the outer container too big */
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background-image: none !important;
+    position: relative !important;
+}
+
+/* Theme the arrows using a masked pseudo-element overlay */
+.autoscroller::after {
+    content: "" !important;
+    display: block !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background-color: var(--toolbarbutton-icon-fill, #00ddff) !important;
+    mask-image: var(--autoscroll-background-image) !important;
+    mask-repeat: no-repeat !important;
+    mask-position: center !important;
+    mask-size: auto !important;
 }
