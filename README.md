@@ -23,6 +23,7 @@ https://github.com/user-attachments/assets/a50f4e77-ea29-446f-a3f9-175781ec95bc
 
 - [userChrome.css](./template/userChrome.css)
 - [userContent.css](./template/userContent.css)
+- [toggler.css](./template/toggler.css)
 
 ### List of all websites
 
