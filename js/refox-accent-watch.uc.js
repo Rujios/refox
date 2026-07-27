@@ -62,7 +62,6 @@ toolbar .toolbarbutton-1 > .toolbarbutton-icon {
 #unified-extensions-button .toolbarbutton-icon {
   fill: var(--zen-accent-color10) !important;
   color: var(--zen-accent-color10) !important;
-  --toolbarbutton-icon-fill: var(--zen-accent-color10) !important;
 }
 `;
 
