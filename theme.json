@@ -1,0 +1,18 @@
+{
+  "id": "RefoxAccentWatch",
+  "author": "ADIOR-enigma",
+  "name": "Refox Accent Watch",
+  "description": "Live Matugen/Pywal accent theming for Zen Browser — hot-reloads UI colors from your colors.json.",
+  "version": "1.0.0",
+  "createdAt": "2026-07-26",
+  "updatedAt": "2026-07-26",
+  "scripts": {
+    "js/refox-accent-watch.uc.js": {
+      "name": "Accent watch",
+      "description": "Polls colors.json and applies Zen accent/background variables.",
+      "include": ["chrome://browser/content/browser.xhtml"]
+    }
+  },
+  "tags": ["chrome", "theming", "matugen", "pywal"],
+  "fork": ["zen"]
+}

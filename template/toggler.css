@@ -11,9 +11,7 @@
  * ========================================================================= */
 
 /* Hide bottom sidebar buttons */
-#vertical-tabs-newtab-button,
 #sidebar-tools-and-extensions-splitter,
-#tabs-newtab-button,
 .buttons-wrapper {
     display: none !important;
 }

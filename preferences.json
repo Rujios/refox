@@ -1,0 +1,43 @@
+[
+  {
+    "type": "text",
+    "label": "🎨 Refox Accent Watch",
+    "margin": "10px 0 20px 0",
+    "size": "18px"
+  },
+  {
+    "type": "string",
+    "property": "refox.accent-watch.colors-path",
+    "label": "Path to colors.json",
+    "defaultValue": "",
+    "placeholder": "leave blank for ~/.cache/wal/colors.json"
+  },
+  {
+    "type": "dropdown",
+    "property": "refox.accent-watch.poll-ms",
+    "label": "Poll interval",
+    "value": "number",
+    "defaultValue": 800,
+    "placeholder": false,
+    "options": [
+      { "label": "Fast (400ms)", "value": 400 },
+      { "label": "Default (800ms)", "value": 800 },
+      { "label": "Relaxed (2000ms)", "value": 2000 }
+    ]
+  },
+  {
+    "type": "dropdown",
+    "property": "refox.accent-watch.opacity",
+    "label": "Background opacity",
+    "value": "number",
+    "defaultValue": 100,
+    "placeholder": false,
+    "options": [
+      { "label": "Opaque (100%)", "value": 100 },
+      { "label": "High (90%)", "value": 90 },
+      { "label": "Medium (70%)", "value": 70 },
+      { "label": "Low (50%)", "value": 50 },
+      { "label": "Minimal (30%)", "value": 30 }
+    ]
+  }
+]
