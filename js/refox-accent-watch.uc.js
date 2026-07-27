@@ -58,7 +58,7 @@ toolbar .toolbarbutton-1 > .toolbarbutton-icon {
 }
 
 #PanelUI-menu-button .toolbarbutton-icon,
-#downloads-button .toolbarbutton-icon,
+#downloads-button,
 #unified-extensions-button .toolbarbutton-icon {
   fill: var(--zen-accent-color10) !important;
   color: var(--zen-accent-color10) !important;
